@@ -96,27 +96,39 @@ It demonstrates **end-to-end system design**:
 ---
 
 ## 📂 Project Structure
-## 📂 Project Structure
 
+```bash
 TeamSync/
 │
-├── TeamSync Standalone.html        # Main UI file
+├── TeamSync Standalone.html      # Main UI entry file
 │
-├── decoded/                        # Extracted JS assets
+├── decoded/                     # Extracted JavaScript assets
 │   ├── *.js
 │
-├── decoded_all/                   # Full decoded bundle files
-│   ├── *.js / *.txt
+├── decoded_all/                 # Complete decoded bundle files
+│   ├── *.js
+│   ├── *.txt
 │
-├── decoded_check/                 # Verified/cleaned scripts
+├── decoded_check/               # Verified & cleaned scripts
 │   ├── *.js
 │
-├── tools/                         # Utility scripts
+├── tools/                       # Utility & helper scripts
 │   ├── extract-bundler-asset.js
 │   ├── replace-bundler-asset.js
 │   ├── scan-bundler-manifest.js
 │   ├── dump-all-js-assets.js
 │   └── sidebar.js
+```
+
+---
+
+### 📌 Folder Description
+
+* **TeamSync Standalone.html** → Main UI file that runs the application
+* **decoded/** → Contains extracted JavaScript from bundled files
+* **decoded_all/** → Full raw decoded output for analysis/debugging
+* **decoded_check/** → Cleaned and verified scripts ready for use
+* **tools/** → Custom scripts used for extraction, replacement, and debugging
 
 
 ---
